@@ -48,13 +48,16 @@
 
 <body id="page-top">
   <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <nav id="mainNav" class="navbar navbar-dark navbar-fixed-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -90,22 +93,23 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <p><br/><br/></p>
-          <div id="videoo">
-            <video autoplay muted loop width="100%" height="100%" id="myVideo">
+
+          <div id="">
+            <video playsinline autoplay muted loop width="100%" height="100%" id="myVideo">
                 <source src="public/MyMovie.mp4" type="video/mp4">
             </video>
-          </div>
+          </div><br><br>
 
-          <div class="container" id="video">
+          <div class="container" id="">
             <div class="row">
-              <div class="col-md-8 col-md-offset-2">
+              <div class="col-md-8 ">
                 <h2 class="section-heading">Nerds,</h1>
                     <h2 class="section-heading">Be Ambitious.</h1><br />
                     <h4>Entry into Industry & Technology, ETI<br/><br/></h4>
                     <div id="open-popup" class="btn btn-outline btn-xl">
                                         subscribe!
                                     </div>
+                                    <br><br>
 
 
               </div>
@@ -115,10 +119,10 @@
         <p><br/></p>
         <br>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br><br>
       <div class="row"><div class="badges heart">
         <a class="badge-link" target="_blank" href="http://etinow.me"><img src="public/img/etilogo.png" alt=""></a>
-      </div></div><br/><br/><br/><br/><br/><br/><br/><br/>
+      </div></div><br/><br/><br/><br/><br/><br/><br/><br/><br><br><br><br>
     </div>
   </section>
 
@@ -167,34 +171,34 @@
             </div>
             <div class="col-md feature-item">
               <h3>Weekly 테크 뉴스</h3>
-              <p class="text-muted">매주 뜨거운 기술 소식을 전달합니다.<br /><br /><br /><br /><br /><br /><br /></p>
-              <img id="rocket" src="public/img/rocket2.png" alt=""><br /><br /><br /><br /><br /><br /><br /><br /><br />
-  </div>  </div>
+              <p class="text-muted">매주 뜨거운 기술 소식을 전달합니다.<br><br><br><br><br /><br /><br /><br /><br /><br /><br /></p>
+              <img id="rocket" src="public/img/rocket2.png" alt=""><br><br><br><br><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            </div>
+          </div>
 
 
 
-            <div class="row">
-              <div class="col-md">
-                <div class="container-fluid">
-                  <div class="row">
+          <div class="row">
+            <div class="col-md">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="">
+                    <div class="feature-item">
+                      <img src="public/img/monthly.jpg" alt="" id="small-picture">
+                      <h3>정기모임</h3>
+                      <p class="text-muted">매월 아이디어 개발 및 토의 세션을 갖습니다.</p>
+                    </div>
                     <div class="">
                       <div class="feature-item">
-                        <img src="public/img/monthly.jpg" alt="" id="small-picture">
-                        <h3>정기모임</h3>
-                        <p class="text-muted">월 1회 아이디어 공유 및 토의 세션을 갖습니다.</p>
+                        <img src="public/img/startup.png" alt="" id="small-picture">
+                        <h3>스타트업 취재 및 인터뷰</h3>
+                        <p class="text-muted">유망한 테크 스타트업을 탐방합니다.</p>
                       </div>
                       <div class="">
                         <div class="feature-item">
-                          <img src="public/img/startup.png" alt="" id="small-picture">
-                          <h3>스타트업 취재 및 인터뷰</h3>
-                          <p class="text-muted">유망한 테크 스타트업을 탐방합니다.</p>
-                        </div>
-                        <div class="">
-                          <div class="feature-item">
-                            <img src="public/img/announcing-min.jpg" alt="" id="small-picture">
-                            <h3>네트워킹 행사 참가 및 주최</h3>
-                            <p class="text-muted">스타트업 네트워킹 행사를 참가하고 주최합니다.</p>
-                                      </div>
+                          <img src="public/img/announcing-min.jpg" alt="" id="small-picture">
+                          <h3>네트워킹 행사 참가 및 주최</h3>
+                          <p class="text-muted">스타트업 인재들과 네트워킹 합니다.</p>
                         </div>
                       </div>
                     </div>
@@ -205,6 +209,7 @@
           </div>
         </div>
       </div>
+    </div>
 
 
   </section>
@@ -212,12 +217,16 @@
   <section id="vision" class="cta" style="background-image">
     <div class="cta-content">
       <div class="container">
-        <h2>Nerds.<br />We Ambitious.</h2>
+        <h2>Nerds,<br /><br />We Ambitious.<br /><br /><br /><br /><br /></h2>
         <h4>ETI의 궁극적인 비전은 모든 Tech-oriented people의 잠재력을 일깨우고 그 잠재력을 달성하도록 돕는 것입니다.<br /> <br /> 이를 위해 ETI는 그들과 전 세계를 연결하는 네트워크가 되고자 합니다.</h3>
 <br />
 <div id="open-popup" class="btn btn-outline btn-xl">
                     subscribe!
-                </div>
+                 </div><br /><br />
+                 <a href="http://www.snu.ac.kr/news?bm=v&bbsidx=125393" class="btn btn-outline btn-xl">
+                                     more about us!
+                                 </a>
+
       </div>
     </div>
     <div class="overlay"></div>
