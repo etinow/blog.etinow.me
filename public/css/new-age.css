@@ -307,7 +307,7 @@ section.cta {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/team.jpg');
+  background-image: url('../img/team-min.jpg');
   padding: 250px 0;
 }
 section.cta .cta-content {
