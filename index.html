@@ -12,7 +12,7 @@
   <title>{{ cosmic.object.landing-page.metadata.site_title }}</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -20,12 +20,12 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
   <!-- Plugin CSS -->
-  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+  <link rel="stylesheet" href="public/vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="public/vendor/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="public/vendor/device-mockups/device-mockups.min.css">
 
   <!-- Theme CSS -->
-  <link href="css/new-age.css" rel="stylesheet">
+  <link href="public/css/new-age.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,16 +48,13 @@
 
 <body id="page-top">
   <div id="fb-root"></div>
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <nav id="mainNav" class="navbar navbar-dark navbar-fixed-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -96,9 +93,10 @@
           <p><br/><br/></p>
           <div id="videoo">
             <video autoplay muted loop width="100%" height="100%" id="myVideo">
-                <source src="MyMovie.mp4" type="video/mp4">
+                <source src="public/MyMovie.mp4" type="video/mp4">
             </video>
           </div>
+
           <div class="container" id="video">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
@@ -117,9 +115,10 @@
         <p><br/></p>
         <br>
       </div>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       <div class="row"><div class="badges heart">
-        <a class="badge-link" target="_blank" href="http://etinow.me"><img src="img/etilogo.png" alt=""></a>
-      </div></div>
+        <a class="badge-link" target="_blank" href="http://etinow.me"><img src="public/img/etilogo.png" alt=""></a>
+      </div></div><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
   </section>
 
@@ -135,7 +134,7 @@
             <hr>
             <br><br>
             <br><br><br>
-            <h2>우리는 테크 스타트업<br /> 전문 미디어입니다.</h2>
+            <h2>우리는 테크 스타트업<br /><br /> 전문 미디어입니다.</h2>
                 <br>
                 <br>
                 <br>
@@ -169,7 +168,7 @@
             <div class="col-md feature-item">
               <h3>Weekly 테크 뉴스</h3>
               <p class="text-muted">매주 뜨거운 기술 소식을 전달합니다.<br /><br /><br /><br /><br /><br /><br /></p>
-              <img id="rocket" src="img/rocket2.png" alt=""><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <img id="rocket" src="public/img/rocket2.png" alt=""><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </div>  </div>
 
 
@@ -180,23 +179,22 @@
                   <div class="row">
                     <div class="">
                       <div class="feature-item">
-                        <img src="img/monthly.jpg" alt="" id="small-picture">
+                        <img src="public/img/monthly.jpg" alt="" id="small-picture">
                         <h3>정기모임</h3>
                         <p class="text-muted">월 1회 아이디어 공유 및 토의 세션을 갖습니다.</p>
                       </div>
                       <div class="">
                         <div class="feature-item">
-                          <img src="img/startup.png" alt="" id="small-picture">
+                          <img src="public/img/startup.png" alt="" id="small-picture">
                           <h3>스타트업 취재 및 인터뷰</h3>
                           <p class="text-muted">유망한 테크 스타트업을 탐방합니다.</p>
                         </div>
                         <div class="">
                           <div class="feature-item">
-                            <img src="img/announcing.jpg" alt="" id="small-picture">
+                            <img src="public/img/announcing.jpg" alt="" id="small-picture">
                             <h3>네트워킹 행사 참가 및 주최</h3>
                             <p class="text-muted">스타트업 네트워킹 행사를 참가하고 주최합니다.</p>
-                            <p class="text-muted">{{ content }}</p>
-                          </div>
+                                      </div>
                         </div>
                       </div>
                     </div>
@@ -253,7 +251,7 @@
       </ul>
       <div class="center-block" style="width: 240px; margin-top: 20px; margin-bottom: 20px;">
         <a href="https://www.facebook.com/donggi.sung" target="_blank" style="color: #fff; text-decoration: none;">
-                    <img style="float:left;margin-right:15px;position:relative;" src="img/etilogo.png" width="28" height="28">
+                    <img style="float:left;margin-right:15px;position:relative;" src="public/img/etilogo.png" width="28" height="28">
                     <span class="powered-by" style="top: 3px; position: relative;">Proudly powered by DG</span>
                 </a>
       </div>
@@ -261,16 +259,16 @@
   </footer>
 
   <!-- jQuery -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="public/vendor/jquery/jquery.min.js"></script>
 
   <!-- Bootstrap Core JavaScript -->
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="public/vendor/bootstrap/js/bootstrap.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
   <!-- Theme JavaScript -->
-  <script src="js/new-age.min.js"></script>
+  <script src="public/js/new-age.min.js"></script>
 
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
   <script type="text/javascript">
