@@ -365,6 +365,12 @@ section.contact ul.list-social li.social-twitter a {
 section.contact ul.list-social li.social-twitter a:hover {
   background-color: #0d95e8;
 }
+section.contact ul.list-social li.social-reddit a {
+  background-color: #FF7F50;
+}
+section.contact ul.list-social li.social-reddit a:hover {
+  background-color: #FFA500;
+}
 section.contact ul.list-social li.social-facebook a {
   background-color: #3b5998;
 }
@@ -477,4 +483,34 @@ body {
 } */
 #rocket{
   max-width: 100px;
+}
+
+/* 28 Sep 2018, minor change */
+
+section div h2 {
+    font-size: 30px;
+}
+
+@media (min-width: 414px) {
+    section div h2 {
+        font-size: 45px;
+    }
+}
+
+#what_we_do{
+  font-size:17px;
+}
+
+@media (min-width: 992px) {
+      #what_we_do{
+      font-size:30px;
+    }
+}
+
+#contents{
+  color: #fcbd20
+}
+
+.nav.navbar-nav.navbar-right{
+  background-color: rgba(0,0,0, 0.4);
 }
