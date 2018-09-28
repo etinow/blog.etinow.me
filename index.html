@@ -11,6 +11,9 @@
 
   <title>ETI landing page</title>
 
+  <!-- Refactoring CSS -->
+  <link href="public/css/refactoring.css" rel="stylesheet">
+
   <!-- Bootstrap Core CSS -->
   <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,14 +21,15 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- Plugin CSS -->
-  <link rel="stylesheet" href="public/vendor/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="public/vendor/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="public/vendor/device-mockups/device-mockups.min.css">
 
   <!-- Theme CSS -->
   <link href="public/css/new-age.css" rel="stylesheet">
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -123,6 +127,32 @@
       <div class="row"><div class="badges heart">
         <a class="badge-link" target="_blank" href="http://etinow.me"><img src="public/img/etilogo.png" alt=""></a>
       </div></div><br/><br/><br/><br/><br/><br/><br/><br/><br><br><br><br>
+
+      <section class="contact bg-primary">
+        <div class="container">
+          <p class="text-muted" id=contents>contents</p>
+          <br><br><br>
+          <ul class="list-inline list-social">
+
+              <li class="social-twitter">
+                <a target="_blank" href="http://etinow.me"><i class="fa fa-rocket"></i></a>
+                <p>media</p>
+              </li>
+
+              <li class="social-reddit">
+                <a target="_blank" href="http://www.podbbang.com/ch/1768101?e=22692467"><i class="fa fa-podcast"></i>
+  </a>
+                <p>podcast</p>
+              </li>
+
+              <li class="social-facebook">
+                <a target="_blank" href="https://www.facebook.com/etinow/"><i class="fa fa-facebook"></i></a>
+                <p>facebook</p>
+              </li>
+
+          </ul>
+          </div>
+      </section>
     </div>
   </section>
 
@@ -138,14 +168,14 @@
             <hr>
             <br><br>
             <br><br><br>
-            <h2>우리는 테크 스타트업<br /><br /> 전문 미디어입니다.</h2>
+            <div><h2>우리는 테크 스타트업<br /><br /> 전문 미디어입니다.</h2> </div>
+
                 <br>
                 <br>
                 <br>
-                <br><br><br><br><br><br>
+                <br><br><br><br>
                 <br>
-                <br>
-                <br>
+                              <br>
                 <p class="text-muted">What we do?</p>
                 <hr>
               </div>
@@ -170,8 +200,8 @@
               </div>
             </div>
             <div class="col-md feature-item">
-              <h3>Weekly 테크 뉴스</h3>
-              <p class="text-muted">매주 뜨거운 기술 소식을 전달합니다.<br><br><br><br><br /><br /><br /><br /><br /><br /><br /></p>
+              <h3 id="what_we_do">Weekly 테크 뉴스</h3>
+              <p class="text-muted" id="what_we_do">매주 뜨거운 기술 소식을 전달합니다.<br /><br /><br /><br /><br /><br /><br /></p>
               <img id="rocket" src="public/img/rocket2.png" alt=""><br><br><br><br><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
           </div>
@@ -184,21 +214,21 @@
                 <div class="row">
                   <div class="">
                     <div class="feature-item">
-                      <img src="public/img/monthly.jpg" alt="" id="small-picture">
-                      <h3>정기모임</h3>
-                      <p class="text-muted">매월 아이디어 개발 및 토의 세션을 갖습니다.</p>
+                      <img src="public/img/monthly_min.jpg" alt="" id="small-picture">
+                      <h3 id="what_we_do">정기모임</h3>
+                      <p class="text-muted" id="what_we_do">매월 아이디어 개발 및 토의 세션을 갖습니다.</p>
                     </div>
                     <div class="">
                       <div class="feature-item">
-                        <img src="public/img/startup.png" alt="" id="small-picture">
-                        <h3>스타트업 취재 및 인터뷰</h3>
-                        <p class="text-muted">유망한 테크 스타트업을 탐방합니다.</p>
+                        <img src="public/img/startup_min.jpg" alt="" id="small-picture">
+                        <h3 id="what_we_do">스타트업 취재 및 인터뷰</h3>
+                        <p class="text-muted" id="what_we_do">유망한 테크 스타트업을 탐방합니다.</p>
                       </div>
                       <div class="">
                         <div class="feature-item">
                           <img src="public/img/announcing-min.jpg" alt="" id="small-picture">
-                          <h3>네트워킹 행사 참가 및 주최</h3>
-                          <p class="text-muted">스타트업 인재들과 네트워킹 합니다.</p>
+                          <h3 id="what_we_do">네트워킹 행사 참가 및 주최</h3>
+                          <p class="text-muted" id="what_we_do">스타트업 인재들과 네트워킹 합니다.</p>
                         </div>
                       </div>
                     </div>
@@ -238,9 +268,14 @@
         <li class="social-twitter">
           <a target="_blank" href="http://etinow.me"><i class="fa fa-rocket"></i></a>
         </li>
+        <li class="social-reddit">
+          <a target="_blank" href="http://www.podbbang.com/ch/1768101?e=22692467"><i class="fa fa-podcast"></i>
+</a>
+        </li>
         <li class="social-facebook">
           <a target="_blank" href="https://www.facebook.com/etinow/"><i class="fa fa-facebook"></i></a>
         </li>
+
         <li class="social-google-plus">
           <a target="_blank" href="mailto:etisnu@gmail.com"><i class="fa fa-envelope"></i></a>
         </li>
